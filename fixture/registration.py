@@ -10,6 +10,7 @@ class RegistHelper:
         wd.get("https://ssp.clickadu.com/#/app/auth/signUp")
         wd.find_element_by_css_selector(
             ".signup__form >div:nth-child(1)>div>label:nth-child(1)").click()
+        wd.find_element_by_id("email").send_keys("rtktjgfgujgz@emlhub.com")
         self.contact_info()
         self.ad_details()
 
@@ -19,8 +20,7 @@ class RegistHelper:
         wd.find_element_by_css_selector(
             ".signup__form >div:nth-child(1)>div>label:nth-child(2)").click()
         wd.find_element_by_id("companyName").send_keys("Company Name")
-        wd.find_element_by_id("_value").send_keys("Russian Federation")
-        wd.find_element_by_id("address").send_keys("Tverskaya street")
+        wd.find_element_by_id("email").send_keys("rtkgfdgthjjgz@emlhub.com")
         self.contact_info()
         self.ad_details()
 
@@ -31,7 +31,7 @@ class RegistHelper:
         wd.find_element_by_id("_value").send_keys("Russian Federation")
         wd.find_element_by_id("city").send_keys("Moscow")
         wd.find_element_by_id("address").send_keys("Tverskaya street")
-        wd.find_element_by_id("email").send_keys("gqmznxoz@emlpro.com")
+
         wd.find_element_by_name("messengerNickname").send_keys("test")
         wd.find_element_by_id("signupSubmit").click()
         time.sleep(1)
@@ -62,7 +62,7 @@ class RegistHelper:
         wd.find_element_by_id("_value").send_keys("Afghanistan")
         wd.find_element_by_id("city").send_keys("Moscow")
         wd.find_element_by_id("address").send_keys("Tverskaya street")
-        wd.find_element_by_id("email").send_keys("blacklist@test.test")
+        wd.find_element_by_id("email").send_keys("byygdflljgz@emlhub.com")
         wd.find_element_by_name("messengerNickname").send_keys("test")
         wd.find_element_by_id("signupSubmit").click()
         wd.find_element_by_css_selector(".form-group__input-errors").click()
@@ -83,7 +83,7 @@ class RegistHelper:
         wd.find_element_by_id("city").send_keys("Bruges")
         wd.find_element_by_id("address").send_keys("Bilkske")
         wd.find_element_by_css_selector("#vatExist .checkbox").click()
-        wd.find_element_by_id("email").send_keys("europe@test.test")
+        wd.find_element_by_id("email").send_keys("gdgfdgdf@test.test")
         wd.find_element_by_name("messengerNickname").send_keys("test")
         wd.find_element_by_id("signupSubmit").click()
         self.ad_details()
